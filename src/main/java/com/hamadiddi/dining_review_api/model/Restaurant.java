@@ -26,6 +26,7 @@ public class Restaurant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "restaurant_id")
     private Long id;
 
     private String name;
@@ -51,9 +52,9 @@ public class Restaurant {
     @Column(name = "closing_time")
     private LocalTime closingTime;
 
-    private Double peanutScore;
-    private Double eggScore;
-    private Double diaryScore;    
+    private Integer peanutScore;
+    private Integer eggScore;
+    private Integer diaryScore;    
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
