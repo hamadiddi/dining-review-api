@@ -1,4 +1,4 @@
-package com.hamadiddi.dining_review_api.model;
+package com.hamadiddi.dining_review_api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
