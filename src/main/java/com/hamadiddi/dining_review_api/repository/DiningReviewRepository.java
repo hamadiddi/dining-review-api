@@ -19,11 +19,11 @@ public interface DiningReviewRepository extends CrudRepository<DiningReview, Lon
     // Fetch all reviews for a specific restaurant
     List<DiningReview> findByRestaurant(Restaurant restaurant);
 
-    // Fetch all reviews that are pending approval
-    List<DiningReview> findByApprovedIsNull();
+    // // Fetch all reviews that are pending approval
+    // List<DiningReview> findByApprovedIsNull();
 
-    // Fetch all approved reviews for a specific restaurant
-    List<DiningReview> findByRestaurantAndApprovedTrue(Restaurant restaurant);
+    // // Fetch all approved reviews for a specific restaurant
+    // List<DiningReview> findByRestaurantAndApprovedTrue(Restaurant restaurant);
 
 
 
