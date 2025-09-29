@@ -1,7 +1,11 @@
 package com.hamadiddi.dining_review_api.model;
 
+import com.hamadiddi.dining_review_api.enums.ReviewStatus;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -37,6 +41,9 @@ public class DiningReview {
     // Optional user commentary
     @Column(length = 1000)
     private String commentary;
+
+    @Enumerated(EnumType.STRING)
+    private ReviewStatus reviewStatus;
 
 
 
