@@ -44,6 +44,7 @@ public class DiningReview {
 
     @Enumerated(EnumType.STRING)
     private ReviewStatus reviewStatus;
+    private Boolean approved;
 
 
 
