@@ -17,5 +17,9 @@ public interface RestaurantRepository extends CrudRepository<Restaurant, Long>{
 
     List<Restaurant> findByZipCodeAndDairyScoreIsNotNullOrderByDairyScoreDesc(String zipCode);
 
+    List<Restaurant> findByZipCode(String zipCode);
+
+    List<Restaurant> findAll();
+
 
 }

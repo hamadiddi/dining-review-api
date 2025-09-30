@@ -33,7 +33,7 @@ public class DiningReview {
 
     // Foreign key reference to Restaurant
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "restaurant_id", nullable = false, referencedColumnName = "restaurant_id")
+    @JoinColumn(name = "restaurantId", nullable = false, referencedColumnName = "restaurantId")
     private Restaurant restaurant;
 
     private Integer peanutScore;
